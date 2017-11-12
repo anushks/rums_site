@@ -1,5 +1,5 @@
 #intro {
-    background-image: url("../img/cruciform.jpg");
+    background-image: url("../img/header.jpg");
     height: 500px;
     margin-top: 0px;
     display: flex;
@@ -25,6 +25,38 @@ hr {
 
 #about {
     background-color: rgb(177, 124, 10);
+    display: block;
+    margin: auto;
+    padding: 2em;
+    color: white;
+}
+
+#subcommittees {
+    background-color: rgb(45, 56, 113);
+    display: block;
+    margin: auto;
+    padding: 2em;
+    color: white;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+.card-title {
+    background-color: #000000b3;
+}
+
+ul {
+    list-style: circle;
+}
+
+#alumni {
+    background-color: rgb(45, 113, 70);
     display: block;
     margin: auto;
     padding: 2em;

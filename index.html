@@ -11,18 +11,29 @@
     $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
-  });</script>
+  });
+  
+  $(".button-collapse").sideNav();
+  </script>
     </head>
 <body>
     
   <nav>
     <div class="nav-wrapper white black-text z-depth-1">
       <a href="#" class="brand-logo left black-text">&nbsp myRUMS</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse right black-text"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#about" class="black-text">About</a></li>
-        <li><a href="badges.html" class="black-text">Components</a></li>
-        <li><a href="collapsible.html" class="black-text">JavaScript</a></li>
+        <li><a href="#subcommittees" class="black-text">Sub-committees</a></li>
+        <li><a href="#alumni" class="black-text">Alumni</a></li>
+        <li><a href="https://medium.com/rums" class="black-text">News</a></li>
       </ul>
+      <ul id="mobile-demo" class="side-nav">
+          <li><a href="#about" class="black-text">About</a></li>
+          <li><a href="#subcommittees" class="black-text">Sub-committees</a></li>
+          <li><a href="#alumni" class="black-text">Alumni</a></li>
+          <li><a href="https://medium.com/rums" class="black-text">News</a></li>
+        </ul>
     </div>
   </nav>
 
@@ -38,7 +49,7 @@
   </div>
 
   <div id="about">
-      <h2>About</h1>
+      <h1>About</h1>
       <div class="divider"></div><br>
       <div class="row">
         <div class="col s12 m8">
@@ -66,16 +77,64 @@
       <div class="card">
         <div class="card-image">
           <img src="img/cruciform.jpg">
-        </div>
-        <div class="card-content black-text">
-          <p>The Cruciform Building - Home of the Medical School</p>
+          <span class="card-title">The Cruciform Building - Home of the Medical School</span>
         </div>
         <div class="card-action">
           <a href="http://www.ucl.ac.uk/library/sites/cruciform">More info</a>
         </div>
       </div>
       <div class="card grey darken-4">
-        <a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/RumsUnion?ref_src=twsrc%5Etfw">Tweets by RumsUnion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+        <a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/RumsUnion?ref_src=twsrc%5Etfw">Tweets by RumsUnion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="subcommittees">
+  <h1>Sub-committees at RUMS</h1>
+  <div class="divider"></div><br>
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card small">
+        <div class="card-image ">
+          <img src="img/sports.jpg">
+          <span class="card-title">Sports and Societies</span>
+        </div>
+        <div class="card-content black-text">
+          <p>Contact: Charles Travers</p>
+        </div>
+        <div class="card-action">
+          <a href="#modalsports" class="modal-trigger">More info</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card small">
+        <div class="card-image ">
+          <img src="img/phys.gif">
+          <span class="card-title">Education</span>
+        </div>
+        <div class="card-content black-text">
+          <a href="zcha029@ucl.ac.uk">Contact: Anush Shashidhara (Y1-3)</a>
+          <p>Contact: Aayushi Gupta (Y4-6)</p>
+        </div>
+        <div class="card-action">
+          <a href="#modaleducation" class="modal-trigger">More info</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card small">
+        <div class="card-image ">
+          <img src="img/welfare.png">
+          <span class="card-title" >Welfare</span>
+        </div>
+        <div class="card-content black-text">
+          <a href="zcha029@ucl.ac.uk">Contact: Iram Hasan</a>
+        </div>
+        <div class="card-action">
+          <a href="#modalwelfare" class="modal-trigger">More info</a>
+        </div>
       </div>
     </div>
   </div>
@@ -117,6 +176,85 @@
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
   </div>
-</div>     
+</div>
+
+<div id="modalsports" class="modal black-text">
+  <div class="modal-content">
+    <h2 class="flow-text">Sports and Societies</h2>
+    <hr>
+    <h3>Sports</h3>
+    <p>Getting involved in RUMS Sport is a decision few students regret. Bonds forged in these teams will carry you through and beyond your time at RUMS. Whether you are a casual player looking to keep fit or a more serious athlete, these clubs cater to the social and sporting needs of people of any level. Most sports also hold a weekly social on a Wednesday, and go on various tours to different parts of the country/abroad.</p>
+      
+    <p>Notable annual events include RUMS Hockey's matches in the London Varsity Series against KCL, Rugby's Bill Smith's event and football's St. John's Cup event, where the first year medics face off against the the second years, and the Lumsden Cup; an inter-sport netball competition run by RUMS netball where all proceeds go to charity.</p>
+      
+    <p>All the sports teams will be present at the RUMS Fresher's Fair, and will hold trial days where you can go and get a feel of what it is like to be part of the club with no obligation to sign up. Don't worry if you miss these; as a general rule the clubs are very welcoming, and are happy for you to come down for a trial session, though it best to email them first so they can ensure they can accommodate you.</p>
+    <h3>Societies</h3>
+    <p>Welcome to RUMS Societies. This is a small yet important section of RUMS life. Not everyone is cut out to be a sportsman and the RUMS affiliated societies cater for that need. Whilst open to non-medics, RUMS Societies are predominantly made up of medical students. Notable events include the MD's Christmas Show – an event not to be missed! Importantly, these societies often act as important support networks for students, with members sharing notes with one another and older years helping younger students with their studies. Get involved early…you won’t regret it!</p>
+  </div>
+  <div class="modal-footer">
+    <a href="http://studentsunionucl.org/clubs-societies/directory?field_category_tid=All&title=rums&sort_by=title&sort_order=ASC" class="btn blue">List of Societies</a>
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+  </div>
+  
+  <div id="modaleducation" class="modal black-text">
+      <div class="modal-content">
+        <h2 class="flow-text">Education</h2>
+        <hr>
+        <p>As your VPs for Education, it is our role to ensure that your views about the course are accurately communicated to the medical school. It is also our role to ensure that the feedback from the teaching committee is communicated back to you as quickly and clearly as possible. Our role is to create a link between the staff and the students and to promote transparency in how both sides deal with the feedback.</p>
+            
+            <p>We accomplish this by electing and working with a team of module representatives for each of the modules. As a module representative, your role would be to gather the opinions and views of your student body about your specific module and then providing feed back to the VP for Education for your year as well as the academic leads. Applications to be module representatives will open when term starts in September.</p>
+            
+            <p>The feedback is communicated to staff in informal feedback sessions and formal meetings such as:</p>
+            <ol>
+                <li><strong>The Student Staff Consultation Committees (SSCCs):</strong> As your VPs for Education, it is our duty to chair SSCCs where we set the agenda and pose our questions and concerns to the staff and ask them to what they have done to achieve previously set goals and what they can do to achieve new goals.</li>
+                <li><strong>The Teaching Sub-Committees (TSCs):</strong> These are meetings run by the academic leads where they seek the student views on the course and reasons for student levels of interactions with the medical school.</li>
+            </ol>
+            <p>As you can see, our role is to represent you, so your opinions and views are vital to us. We look forward to hearing from you throughout this year.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+      </div>
+
+  
+      <div id="modalwelfare" class="modal black-text">
+          <div class="modal-content">
+            <h2 class="flow-text">Welfare</h2>
+            <hr>
+            <p>RUMS has a vast array of resources and contacts available to help medical students through any issues they may face during their 6 years at medical school. Though many students pass through medical school without needing support, rest assured that there will always be a team on hand to help you with any question you may have, no matter how big or small! On this page you should find the various resources you need to get through your time here.</p>
+                
+                <p>We can offer support on issues such as:</p>
+                <ol>
+                    <li>Leaving home, and transitioning to the independence of university life</li>
+                    <li>Academic Issues</li>
+                    <li>Personal Issues (Social, Family, Sexual)</li>
+                    <li>Housing and Financial Problems</li>
+                </ol>
+                
+                <p>As well as with many other matters, so please don’t hesitate to get in touch with us if you need help/advice. Confidentiality will be maintained at all times, and we will dothe best we can to work with the medical school to help you out. Remember that you can also talk to your personal tutor or VM tutor.</p>
+                
+                <p>RUMS Welfare will be putting on various events during the year, including welfare drop-in sessions, exam de-stress events (for preclins and clinical students), and post-results drop-in sessions. Look out for more details on this page, in the RUMS Bulletin, and on Facebook.</p>
+                
+                <h3>Medics-for-Medics</h3>
+                <hr>
+                <p>Stress is common amongst members of the medical profession, and students are no exception. This scheme aims to make use of the wealth of experience ofRUMS students throughout the years to help others. It’s run by trained medical students, for medical students- so if you have any worries about life in RUMS, or you just fancy a chat with another med student, come by for our weekly drop-in sessions!
+                
+                Information on where/when the sessions will be held will be advertised via the RUMS Bulletin and on this site.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+</div> 
+
+<div id="alumni">
+  <h1>RUMS Alumni Association</h1>
+  <div class="divider"></div>
+  <p>The RUMS Alumni Association has been recently founded in conjunction with University College London Medical School to celebrate our fantastic graduate community and to recognise the rich and diverse history of medical alumni from all contributory medical schools. An opportunity for graduates from The Royal Free Medical School, The Middlesex Medical School and University College Medical School to combine to create a vibrant and enjoyable community of alumni.</p>
+  <p>Our aim is to orchestrate reunions, educational events, networking evenings and support, both financial and academical, for current students at UCLMS.</p>
+  <h2>Membership</h2>
+  <p>Membership is only &pound;15 per year and gives you access to a series of events at UCL plus a variety of discounts and benefits available to all alumni.</p>
+  <a class="btn-large waves-white" href="https://admin.directli.co.uk/uclmail/finalists">Membership Form</a>
+</div>
 </body>
 </html>
