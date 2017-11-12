@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>myRUMS</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+    $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });</script>
+    </head>
+<body>
+    
+  <nav>
+    <div class="nav-wrapper white black-text z-depth-1">
+      <a href="#" class="brand-logo left black-text">&nbsp myRUMS</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#about" class="black-text">About</a></li>
+        <li><a href="badges.html" class="black-text">Components</a></li>
+        <li><a href="collapsible.html" class="black-text">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="intro">
+      <div class="float card center blue darken-3 white-text ">
+          <h1>Welcome to <strong>RUMS</strong>!</h1>
+          <div class="card-action">
+                <a class="waves-effect waves-light btn white blue-text">News</a>
+                <a class="waves-effect waves-light btn white blue-text" href="#about">About</a>
+                <a class="waves-effect waves-light btn white blue-text modal-trigger" href="#modalcommittee">Your Committee</a>
+              </div>
+      </div>
+  </div>
+
+  <div id="about">
+      <h2>About</h1>
+      <div class="divider"></div><br>
+      <div class="row">
+        <div class="col s12 m8">
+        <p>
+        The <strong>Royal Free, University College and Middlesex Medical Students Association</strong> has a proud and illustrious past. Formed in the wake of the merger between the three constituent medical schools in 1998, it has since gone from strength to strength and now provides social events, sports teams, societies, welfare services and representation to the 1200 or so medical students at UCL Medical School.</p>
+        <p>UCL Medical School itself was formed over a number of years from the merger of three different institutions the Middlesex Hospital, University College Hospital and the Royal Free Hospital.</p>       
+        <p>The Middlesex Hospital was opened in Fitzrovia in 1745 by Charles Bell and had its first cohort of medical students join in 1746. University College Hospital was opened in 1834 as the North London Hospital, with the purpose of providing the then newly opened University College London with a hospital to train medical students; the governors of the Middlesex Hospital had refused to share its facilities with UCL.
+        </p>
+        <div class="divider"></div>
+        <h3>Honorary President</h3>
+        <p>
+          The individual Medical Schools of the Royal Free, University College and Middlesex all came together to form UCL Medical School in 1998. Each had their own proud history and the tradition of these institutions is captured in the name of our Medical Student Society (RUMS) - Royal Free, University College and Middlesex Students.
+          <br><br>
+          RUMS has two main functions. Firstly it is the elected representative body for Medical Students of UCLMS. Hence it is your voice about educational, welfare and other issues and your bridge to the Faculty. Secondly it is the social and sporting heart of the School with excellent sports teams and other societies
+          <br><br>
+          It is an organisation with not only an excellent history but also an essential present and a great future. Belong and support! It is yours!
+          <br><br>
+          <em>Dr Paul Dilworth<br>
+          Consultant Physician Royal Free<br>
+          Sub Dean UCLMS<br>
+          Hon President RUMS<br></em>
+        </p>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/cruciform.jpg">
+        </div>
+        <div class="card-content black-text">
+          <p>The Cruciform Building - Home of the Medical School</p>
+        </div>
+        <div class="card-action">
+          <a href="http://www.ucl.ac.uk/library/sites/cruciform">More info</a>
+        </div>
+      </div>
+      <div class="card grey darken-4">
+        <a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/RumsUnion?ref_src=twsrc%5Etfw">Tweets by RumsUnion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalcommittee" class="modal blue darken-3 white-text">
+  <div class="modal-content center">
+    <h2 class="flow-text">Your Committee (2017/2018)</h2>
+    <hr>
+    <div class="row">
+      <div class="col s12 m3 card black-text center offset-m1" >
+        <p>Ozzy Eboreime</p>
+        <p><b>President</b></p>
+      </div>
+      <div class="col s12 m3 card black-text center">
+        <p>Charles Travers</p>
+        <p><b>VP Sports and Societies</b></p>
+      </div>
+      <div class="col s12 m3 card black-text center">
+        <p>Dan Ntiubane</p>
+        <p><b>VP Events</b></p>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col s12 m3 card black-text center offset-m1">
+        <p>Iram Hasan</p>
+        <p><b>VP Welfare</b></p>
+      </div>
+      <div class="col s12 m3 card black-text center">
+        <p>Anush Shashidhara</p>
+        <p><b>VP Education Y1-3</b></p>
+      </div>
+      <div class="col s12 m3 card black-text center">
+        <p>Aayushi Gupta</p>
+        <p><b>VP Education Y4-6</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>     
+</body>
+</html>

@@ -1,0 +1,32 @@
+#intro {
+    background-image: url("../img/cruciform.jpg");
+    height: 500px;
+    margin-top: 0px;
+    display: flex;
+}
+
+.float {
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 50%;
+    margin: auto;
+    margin-top: auto;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+#about {
+    background-color: rgb(177, 124, 10);
+    display: block;
+    margin: auto;
+    padding: 2em;
+    color: white;
+}
