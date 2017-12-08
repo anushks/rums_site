@@ -7,48 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script>
-    $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });
-  
-  $(".button-collapse").sideNav();
-  </script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 <body>
     
   <nav>
-    <div class="nav-wrapper blue darken-3 z-depth-1">
-      <a href="#" class="brand-logo left white-text">&nbsp myRUMS</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse right white-text"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper white darken-3 z-depth-1">
+      <a href="#" class="brand-logo left black-text">&nbsp myRUMS</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse right black-text"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#about" class="white-text">About</a></li>
-        <li><a href="#subcommittees" class="white-text">Sub-committees</a></li>
-        <li><a href="#alumni" class="white-text">Alumni</a></li>
-        <li><a href="https://medium.com/rums" class="white-text">News</a></li>
+        <li><a href="#about" class="black-text">About</a></li>
+        <li><a href="#subcommittees" class="black-text">Sub-committees</a></li>
+        <li><a href="#alumni" class="black-text">Alumni</a></li>
+        <li><a href="https://medium.com/rums" class="black-text">News</a></li>
       </ul>
       <ul id="mobile-demo" class="side-nav">
-          <li><a href="#about" class="white-text">About</a></li>
-          <li><a href="#subcommittees" class="white-text">Sub-committees</a></li>
-          <li><a href="#alumni" class="white-text">Alumni</a></li>
-          <li><a href="https://medium.com/rums" class="white-text">News</a></li>
+          <li><a href="#about" class="black-text">About</a></li>
+          <li><a href="#subcommittees" class="black-text">Sub-committees</a></li>
+          <li><a href="#alumni" class="black-text">Alumni</a></li>
+          <li><a href="https://medium.com/rums" class="black-text">News</a></li>
         </ul>
     </div>
   </nav>
 
   <div id="intro">
-      <div class="float card center blue darken-3 white-text ">
+      <div style="max-width: 100vw;" class="float card center blue darken-3 white-text">
           <h1>Welcome to <strong>RUMS</strong>!</h1>
           <div class="card-action">
                 <a class="waves-effect waves-light btn white blue-text">News</a>
                 <a class="waves-effect waves-light btn white blue-text" href="#about">About</a>
-                <a class="waves-effect waves-light btn white blue-text modal-trigger" href="#modalcommittee">Your Committee</a>
+                <a class="waves-effect waves-light btn white blue-text modal-trigger brbutton" href="#modalcommittee">Your Committee</a>
               </div>
       </div>
   </div>
 
-  <div id="about" class="z-depth-3">
+  <div id="about" class="black-text">
       <h1>About</h1>
       <div class="divider"></div><br>
       <div class="row">
@@ -77,7 +72,7 @@
       <div class="card">
         <div class="card-image">
           <img src="img/cruciform.jpg">
-          <span class="card-title">The Cruciform Building - Home of the Medical School</span>
+          <span class="card-title" style="font-size: 12px;">The Cruciform Building - Home of the Medical School</span>
         </div>
         <div class="card-action">
           <a href="http://www.ucl.ac.uk/library/sites/cruciform">More info</a>
@@ -213,7 +208,7 @@
             <p>As you can see, our role is to represent you, so your opinions and views are vital to us. We look forward to hearing from you throughout this year.</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
       </div>
 
