@@ -109,6 +109,8 @@ y_array_pos = 0;
 x = ['pres','edu13','edu46','events','sports','welfare']
 
 function init() {
+document.getElementById("nextYear").style.visibility = "hidden";
+document.getElementById("prevYear").style.visibility = "visible";
 for (i = 0; i < x.length; i++) {
   z = committee[y_value]
   z = z[x[i]];
@@ -122,8 +124,11 @@ for (i = 0; i < x.length; i++) {
 function prevYear() {
   if (y_array_pos < (y.length-1)) {
     y_array_pos = y_array_pos + 1;
+    document.getElementById("prevYear").style.visibility = "visible";
+    document.getElementById("nextYear").style.visibility = "visible"; 
   } else {
-    y_array_pos = 0;
+    document.getElementById("prevYear").style.visibility = "hidden";
+    document.getElementById("nextYear").style.visibility = "visible"; 
   }
   y_value = y[y_array_pos];
   for (i = 0; i < x.length; i++) {
@@ -134,4 +139,24 @@ function prevYear() {
 }
   document.getElementById('com_title').innerHTML = committee[y_value].year;
 }
+
+function nextYear() {
+  if (y_array_pos > 0) {
+    y_array_pos = y_array_pos - 1;
+    document.getElementById("nextYear").style.visibility = "visible";
+    document.getElementById("prevYear").style.visibility = "visible";
+  } else {
+    document.getElementById("nextYear").style.visibility = "hidden"; 
+    document.getElementById("prevYear").style.visibility = "visible";
+  }
+  y_value = y[y_array_pos];
+  for (i = 0; i < x.length; i++) {
+  z = committee[y_value]
+  z = z[x[i]];
+  z = z.name;
+  document.getElementById(x[i]).innerHTML = z;
+}
+  document.getElementById('com_title').innerHTML = committee[y_value].year;
+}
+
 
