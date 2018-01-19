@@ -8,13 +8,11 @@
     <meta name="description" content="The Royal free, University College, Middlesex Medical Students Union, or RUMS, is the students union for UCL medical students. We cater to and stand up for their needs.">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/scripts.js"></script>
     <link rel="icon" href="/img/rums-crest-2.jpg">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-<body>
-    
+<body onload="init()">
   <nav>
     <div class="nav-wrapper white darken-3 z-depth-1">
       <img src="img/rums-crest-2.jpg" style="height:100%;padding: 4px;"><a href="#" class="brand-logo left black-text">myRUMS</a>
@@ -140,39 +138,40 @@
 
 <div id="modalcommittee" class="modal blue darken-3 white-text">
   <div class="modal-content center">
-    <h2 class="flow-text">Your Committee (2017/2018)</h2>
+    <h2 class="flow-text" id="com_title"></h2>
     <hr>
     <div class="row">
       <div class="col s12 m3 card black-text center offset-m1 footerbtn" >
-        <p>Ozzy Eboreime</p>
+        <p id="pres"></p>
         <p><b>President</b></p>
       </div>
       <div class="col s12 m3 card black-text center footerbtn">
-        <p>Charles Travers</p>
+        <p id="sports"></p>
         <p><b>VP Sports and Societies</b></p>
       </div>
       <div class="col s12 m3 card black-text center footerbtn">
-        <p>Dan Ntiubane</p>
+        <p id="events"></p>
         <p><b>VP Events</b></p>
       </div>
       </div>
       <div class="row">
       <div class="col s12 m3 card black-text center offset-m1 footerbtn">
-        <p>Iram Hasan</p>
+        <p id="welfare"></p>
         <p><b>VP Welfare</b></p>
       </div>
       <div class="col s12 m3 card black-text center footerbtn">
-        <p>Anush Shashidhara</p>
+        <p id="edu13"></p>
         <p><b>VP Education Y1-3</b></p>
       </div>
       <div class="col s12 m3 card black-text center footerbtn">
-        <p>Aayushi Gupta</p>
+        <p id="edu46"></p>
         <p><b>VP Education Y4-6</b></p>
       </div>
     </div>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    <button onclick="prevYear()" class="modal-action waves-effect waves-green btn-flat">Previous Year</button>
+    <a href="#!" onclick="init()" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
   </div>
 </div>
 
@@ -266,4 +265,6 @@
   </footer>
       
 </body>
+
+<script src="js/scripts.js"></script>
 </html>
